@@ -7,12 +7,12 @@
     <title>Javascript Alerts</title>
 </head>
 <body>
-    <h1>JAVASCRIPT</h1>
-
-
-
     <script>
         alert("Error! please enter a new password")
     </script>
+    
+    
+    
+    <h1>JAVASCRIPT</h1>
 </body>
 </html>
