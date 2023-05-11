@@ -1,0 +1,156 @@
+.bg {
+    background-image: url(1300px.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.heading {
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin: 0%;
+    padding: 0%;
+    margin-top: 6%;
+}
+.stopwatch {
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+
+    padding: 0%;
+}
+
+.time-div {
+    border-radius: 10%;
+    margin: 0%;
+    margin-top: 10px;
+    height: 150px;
+    width: 115px;
+    margin-top: 2%;
+}
+
+.num {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 80px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.text {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin: 0%;
+    padding: 0%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-style {
+    display: inline-block;
+    width: 120px;
+    padding: 12px 30px;
+    margin: 1%;
+    margin-top: 80px;
+    background: linear-gradient(to bottom right, #1d03af, #1dacd8);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 20px;
+    /* box-shadow: 0px 5px 0px #5f5f5f; */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-style:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 0;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.btn-style:hover {
+    box-shadow: 0px 10px 0px #7c7c7c;
+    transform: translateY(-5px);
+}
+
+.btn-style:hover:after {
+    width: 200%;
+    height: 200%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+@media only screen and (max-width:1500px) {
+    .heading {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .heading {
+        font-size: 40px;
+    }
+
+    .btn-style {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .bg {
+        background-image: url(600px.jpg);
+    }
+
+    .time-div {
+        background: none;
+        margin-top: 50px;
+    }
+
+    .time-div {
+        height: 120px;
+        width: 90px;
+        margin-top: 80px;
+    }
+
+    .heading {
+        margin-top: 80px;
+    }
+
+    .num {
+        font-size: 60px;
+    }
+
+    .text {
+        font-size: 30px;
+    }
+
+    .btn {
+        margin-top: 10px;
+        display: block;
+        margin-left: 32%;
+    }
+
+    .btn-style {
+        margin-top: 0px;
+        background: rgb(202, 119, 92);
+        background: linear-gradient(0deg, rgba(202, 119, 92, 1) 0%, rgba(126, 73, 91, 1) 100%);
+    }
+}

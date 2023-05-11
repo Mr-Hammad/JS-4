@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body class="bg-pc">
+
+    <div class="Res-div">
+        <div id='result-div' class="result">
+            <p id="result"></p>
+
+        </div>
+        <div class="row-1">
+            <input class="inputBar" id="inputField" type="" autofocus>
+        </div>
+
+        <div class="row-2">
+            <div id="btnValue" class="row-element">
+                <button onclick="clearInput()" class="button"><b>CE</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button onclick="addOperator('%')" class="button"><b>%</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button onclick="addOperator('/')" class="button"><b>/</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button onclick="addOperator('+')" class="button"><b>+</b></button>
+            </div>
+        </div>
+
+        <div class="row-3">
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(7)" class="button"><b>7</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(8)" class="button"><b>8</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(9)" class="button"><b>9</b></button>
+            </div>
+            <div id="btnValue" class="row-element multiply">
+                <button onclick="addOperator('*')" class="button"><b>x</b></button>
+            </div>
+
+        </div>
+
+        <div class="row-4">
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(4)" class="button"><b>4</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(5)" class="button"><b>5</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(6)" class="button"><b>6</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button onclick="addOperator('-')" class="button"><b>-</b></button>
+            </div>
+
+        </div>
+
+        <div class="row-5">
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(1)" class="button"><b>1</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(2)" class="button"><b>2</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(3)" class="button"><b>3</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button onclick="calculate()" id="equal" class="button"><b>=</b></button>
+            </div>
+
+        </div>
+        <div class="row-6">
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addNumber(0)" class="button"><b>0</b></button>
+            </div>
+            <div id="btnValue" class="row-element">
+                <button id="numStyling" onclick="addOperator('.')" class="button"><b>.</b></button>
+            </div>
+
+            <div id="btnValue" class="row-element">
+                <button id="numStyling2" class="button" onclick="deletechar()"><b>DEL</b></button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

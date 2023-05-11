@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg">
+
+    <div class="parent-div">
+ 
+         <h1 class="heading">STOP WATCH</h1>
+
+
+
+         <div class="stopwatch">
+
+
+            <div class="time-div">
+                <p id="hour" class="num">00:</p>
+                <p class="text">Hour</p>
+            </div>
+
+            <div class="time-div">
+                <p id="min" class="num">00:</p>
+                <p class="text">Min</p>
+            </div>
+
+            <div class="time-div">
+                <p id="sec" class="num">00:</p>
+                <p class="text">Sec</p>
+            </div>
+
+            <div class="time-div">
+                <p id="ms" class="num">00</p>
+                <p class="text">Ms</p>
+            </div>
+
+        </div>
+
+        <div class="btn">
+
+            <button onclick="start()" class="btn-style">Start</button>
+            <p></p>
+            <button onclick="stop()" class="btn-style">Stop</button>
+            <p></p>
+            <button onclick="reset()" class="btn-style">Reset</button>
+
+        </div>
+
+<script src="app.js"></script>
+
+
+    
+</body>
+
+</html>
