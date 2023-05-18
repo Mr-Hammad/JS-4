@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <div class="main-container">
+        <h1 class="heading">RICH TEXT EDITOR</h1>
+        <div class="toolbar">
+
+
+            <button class="btn" onclick="bold()"><img class="img" src="bold .jpg" alt=""></button>
+
+            <button class="btn" onclick="italic()"><img class="img" src="italic.jpg"></img></button>
+
+            <button class="btn" onclick="underline()"><img class="img" src="underline.jpg" alt=""></button>
+
+            <button class="btn" onclick="alignment('left')">
+                <img src="left button.jpg" alt="Align Left"></button>
+            <button class="btn" onclick="alignment('center')">
+                <img src="centre button.jpg" alt="Align Center"></button>
+            <button class="btn" onclick="alignment('right')">
+                <img src="right button.jpg" alt="Align Right"></button>
+
+
+
+            <input class="dropdown-color" type="color" id="colorInput" onchange="textColor(this.value)">
+
+            <div class="Dropdown">
+
+                <select class="dropdown-color" id="fontSizeDropdown" onchange="fontSize(this.value)">
+                    <option value="">Font Size</option>
+                    <option value="12">12 px</option>
+                    <option value="16">16 px</option>
+                    <option value="20">20 px</option>
+                    <option value="24">24 px</option>
+                    <option value="28">28 px</option>
+                    <option value="32">32 px</option>
+                    <option value="36">36 px</option>
+                    <option value="40">40 px</option>
+                    <option value="44">44 px</option>
+                    <option value="48">48 px</option>
+                    <option value="52">52 px</option>
+                    <option value="56">56 px</option>
+                    <option value="60">60 px</option>
+                    <option value="64">64 px</option>
+                    <option value="68">68 px</option>
+                    <option value="72">72 px</option>
+
+                </select>
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="textbar">
+            <textarea class="text" id="text-input" oninput="updateText()"></textarea>
+        </div>
+        <h3 class="heading">Enter text here</h3>
+        <div class="result-div" id="editor" contenteditable="true"></div>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
